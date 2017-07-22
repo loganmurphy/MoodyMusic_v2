@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>>Moody Music</title>
+  <link rel="stylesheet" type="text/css" href="MoodyMusic_v2.css">
+</head>
+<body>
+  <h1 class="centered"><strong>Hello! How do you <i>feel?</i></strong></h1>
+  <br>
+  <img src="/Users/loganmurphy/desktop/my-smarter-site/IMG-1176.JPG" width="35%" height="35%"
+    onmouseover="src='/Users/loganmurphy/desktop/my-smarter-site/IMG-1177.JPG'"
+    onmouseout="src='/Users/loganmurphy/desktop/my-smarter-site/IMG-1176.JPG'">
+  <br>
+  <br>
+  <h1><center>Music By Mood</center></h1>
+  <p class="centered">Which one is you?</p>
+  <br>
+      <img id="pumped" class="img-buttons1" onclick="alert('LET\'S DO THIS!!!'); randomPlayPumped();"
+      src="https://i.ytimg.com/vi/I33u_EHLI3w/hqdefault.jpg">
+      <img id="chill" class="img-buttons" onclick="alert('Relaxing music coming up.'); randomPlayChill();"
+      src="http://img06.deviantart.net/7473/i/2012/130/8/9/bob_marley_by_jamesf63-d4za6s2.jpg" height="360" width="480">
+      <img id="rage" class="img-buttons" onclick="alert('I JUST FEEEL SO.......ROAAAAAAAAAAAAWWWWWWRRRRRRR!!!!!!!!!!!'); randomPlayRaging();"
+      src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/article_width/public/0/76//logan_2.jpeg?itok=s98bB8kh" height="360" width="480">
+      <img id="sad" class="img-buttons" onclick="alert('It jsut hurts so much inside....=('); randomPlayBummed();"
+      src="http://mrvaudrey.com/wp-content/uploads/2011/09/charlie-brown.png" height="360" width="480">
+      <br>
+      <br>
+  <br>
+  <br>
+  <h3 class="centered"><strong>Did we miss <em>your</em> song?</strong></h3>
+  <p class="centered">Let us know what songs to add to our list and we'll update it!</p>
+  <p class="centered">Make sure to include the artist and how it makes you feel!</p>
+
+  <form class="centered" action="mailto:loganmurphy1984@gmail.com" method="post" onsubmit="">
+    <br>
+    <br>
+    <input type="radio" name="I feel" value="pumped!">Pumped!
+    <input type="radio" name="I feel" value="chill">Chill
+    <input type="radio" name="I feel" value="raging!">RAGING!
+    <input type="radio" name="I feel" value="bummed">Bummed
+    <br>
+    <br>
+    Song, Artist:
+    <input type="text" name="my-song" size="50" onfocus="this.style.backgroundColor='LightYellow';" onblur="this.style.backgroundColor='LightBlue';">
+    <input type="image" src="https://steamuserimages-a.akamaihd.net/ugc/255969629398159937/DDA5094FBFD15E3B57317C20308BFEFC7163B889/" alt="submit" height="40" width="60">
+  </form>
+
+  <!--This was the origional form that I created, which was supposed to save the user input into an array on
+  my .js file, but I couldn't get it to work so I changed the form to an email on submit.
+   <form  class="centered" onsubmit="checkSuggestionBox(suggestion);">
+    Suggest a song for your mood!:
+    <input type="text" id="suggestion" size="35" onfocus="this.style.backgroundColor='LightYellow';" onblur="this.style.backgroundColor='LightBlue';">
+    <input type="submit" value="Submit">
+  </form> -->
+  <script src ="MoodyMusic_v2.js"></script>
+  <br>
+  <br>
+</body>
+<footer>
+
+</footer>
+</html>
