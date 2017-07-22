@@ -1,0 +1,47 @@
+h1, h3 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: 900;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: DarkRed;
+  font-size: 1em;
+}
+.centered {
+  font-size: 20;
+  font-weight: 500;
+  text-align: center;
+}
+
+img {
+  display: block;
+  border: 1px solid black;
+  margin: 0 auto 0 auto;
+}
+
+.img-buttons {
+  display: inline-block;
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 200px;
+  height: 150px
+}
+
+.img-buttons1 {
+  display: inline-block;
+  border: 2px solid black;
+  margin-left: 205px;
+  margin-right: 20px;
+  width: 200px;
+  height: 150px
+}
+
+.center-under {
+  font-size: 20;
+  font-weight: 900;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
